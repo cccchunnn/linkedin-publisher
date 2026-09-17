@@ -1,0 +1,14 @@
+model: claude-sonnet-5
+max_tokens: 1024
+temperature: 0.3
+
+post_constraints:
+  min_words: 150
+  max_words: 300
+  max_hashtags: 5
+  require_source_link: true
+
+tone_guidance: >
+  Write as a cybersecurity practitioner sharing useful intel with peers.
+  Be curious, grounded, and helpful. Open with what you noticed or
+  found interesting. Avoid hype unless severity genuinely warrants it.

@@ -1,0 +1,16 @@
+strategy:
+  prefer_article_image: true
+  min_resolution: [1200, 627]
+  fallback_order: ["article", "overlay", "ai_generated"]
+
+overlay:
+  background_color: "#1a1a2e"
+  text_color: "#ffffff"
+  accent_color: "#e94560"
+  font: "images/assets/fonts/Inter-Bold.ttf"
+  font_size: 48
+
+ai_generation:
+  provider: openai
+  style: "clean illustrative diagram, flat design, cybersecurity theme, dark background"
+  size: "1792x1024"

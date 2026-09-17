@@ -1,0 +1,13 @@
+Came across this from {source_name} — worth a read if you're
+working in {topic_area}.
+
+{summary}
+
+A few things that stood out:
+{highlights}
+
+Sharing in case it's useful for anyone managing similar environments.
+
+Source: {source_url}
+
+{hashtags}

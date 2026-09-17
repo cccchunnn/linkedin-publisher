@@ -1,0 +1,41 @@
+sources:
+  - id: unit42
+    name: Unit 42
+    type: rss
+    url: https://unit42.paloaltonetworks.com/feed/
+    priority: high
+
+  - id: cisa_alerts
+    name: CISA Alerts
+    type: rss
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    priority: high
+
+  - id: krebs
+    name: Krebs on Security
+    type: rss
+    url: https://krebsonsecurity.com/feed/
+    priority: medium
+
+  - id: bleeping
+    name: BleepingComputer
+    type: rss
+    url: https://www.bleepingcomputer.com/feed/
+    priority: medium
+
+  - id: hackernews_sec
+    name: The Hacker News
+    type: rss
+    url: https://feeds.feedburner.com/TheHackersNews
+    priority: medium
+
+  - id: dark_reading
+    name: Dark Reading
+    type: rss
+    url: https://www.darkreading.com/rss.xml
+    priority: medium
+
+selection:
+  max_articles_per_run: 5
+  recency_window_hours: 72
+  min_relevance_score: 0.4
