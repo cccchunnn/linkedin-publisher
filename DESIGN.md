@@ -297,11 +297,11 @@ data/
 The pipeline is designed to run as a **scheduled batch job**, not a daemon.
 
 **Options (pick one):**
-- **cron** (simplest): `0 8,18 * * * cd /path/to/linkedin-publisher && python main.py`
-- **APScheduler** (in-process): For environments where cron isn't available
-- **GitHub Actions** (CI-based): Scheduled workflow that runs the pipeline on a cron trigger
+- **Windows Task Scheduler**: Runs locally at 9 AM, catches up if PC was asleep
+- **cron** (Linux/Mac): `0 1 * * * cd /path/to/linkedin-publisher && python main.py` (1 AM UTC = 9 AM GMT+8)
+- **GitHub Actions** (recommended): Runs in the cloud at 9 AM GMT+8 regardless of whether your PC is on
 
-**Default cadence**: Twice daily (morning + evening) to catch overnight and daytime news cycles.
+**Default cadence**: Once daily at 9:00 AM GMT+8. Sends a Slack notification when drafts are ready.
 
 **`main.py` execution flow:**
 ```python
